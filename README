@@ -1,2 +1,27 @@
 ietf-attendees
 ==============
+This is a collection of Perl scripts that I've hacked together to count the number of
+IETF meeting attendees from various companies. Feel free to gather whatever meaning
+you want from these figures... Or none, if that makes more sense. :)
+
+These scripts require the HTML::TableExtract module to be installed.
+
+Input data for each IETF meeting comes from that meeting's list of registered attendees
+such as https://www.ietf.org/registration/ietf89/attendance.py
+
+To count attendees from each company at a given IETF meeting, run something like:
+./ietf-company.pl ietf89.html
+
+To count attendees across all IETF meetings (from ietf74 onward) run something like:
+./ietf-co-hist.pl 89
+where the argument ("89" in the example above) is the latest attendee data file that's
+availble in the local directory. The output is CSV-formatted text.
+
+There are a few company-specific tools that need to be updated to be more generic.
+But if you want to try them, an example is:
+./brocade-employees.pl ietf89.html
+
+The unknown-employees.pl script doesn't work at this time. It doesn't do what the
+other *-employees.pl scripts do... I'm trying to make it guess employer affiliations
+based on authorstats etc. But it's fairly broken.
+
