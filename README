@@ -1,5 +1,7 @@
 ietf-attendees
 ==============
+by Benson Schliesser <bensons@queuefull.net>
+
 This is a collection of Perl scripts that I've hacked together to count the number of
 IETF meeting attendees from various companies. Feel free to gather whatever meaning
 you want from these figures... Or none, if that makes more sense. :)
