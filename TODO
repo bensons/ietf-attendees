@@ -1,0 +1,6 @@
+Stuff To Do to make these scripts Better
+- Pull the company details (currently hardcoded) into a separate file, to be included like a config file
+- change the various *-employee.pl scripts to take a company name argument, rather than having a bunch
+  of company specific scripts
+- write script to auto-download / update the data files
+
